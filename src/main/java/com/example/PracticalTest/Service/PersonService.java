@@ -4,11 +4,14 @@ import com.example.PracticalTest.Repository.IPersonRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Optional;
 import java.util.UUID;
 
+@Service
 public class PersonService {
     final IPersonRepository personRepository; //creating injection point
 
